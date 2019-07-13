@@ -35,5 +35,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Capture mic to demonstrate Voice Active Detection</string>
 </dict>
 </plist>

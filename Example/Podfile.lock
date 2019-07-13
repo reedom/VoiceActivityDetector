@@ -1,0 +1,31 @@
+PODS:
+  - libfvad (0.1.0)
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+  - VoiceActivityDetector (0.1.0):
+    - libfvad (~> 0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+  - VoiceActivityDetector (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - libfvad
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  VoiceActivityDetector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  libfvad: e746a80f89355df888c454284141bbb41adfdc95
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  VoiceActivityDetector: 4c5052ea5481dce390b5ab833444e6db96980d23
+
+PODFILE CHECKSUM: 859617957d9ae834b618523c0c642764aac522e2
+
+COCOAPODS: 1.7.4

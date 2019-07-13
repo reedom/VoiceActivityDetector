@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076EA1A022D8D4BB008A61CC /* 3722.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076EA19F22D8D4BB008A61CC /* 3722.mp3 */; };
+		076EA1A122D8D4BB008A61CC /* 3722.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076EA19F22D8D4BB008A61CC /* 3722.mp3 */; };
+		076EA1A322D8D98F008A61CC /* AudioTrackReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076EA1A222D8D98F008A61CC /* AudioTrackReader.swift */; };
+		076EA1A422D8D98F008A61CC /* AudioTrackReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076EA1A222D8D98F008A61CC /* AudioTrackReader.swift */; };
 		23B8DCB2F9202A6FE149A770 /* Pods_VoiceActivityDetector_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332B692F0BC4E701B4861634 /* Pods_VoiceActivityDetector_Tests.framework */; };
 		2D4EDDC414D3B2BE6E1AC873 /* Pods_VoiceActivityDetector_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E978FD693FFD07CE45D2EB4 /* Pods_VoiceActivityDetector_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -28,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		076EA19F22D8D4BB008A61CC /* 3722.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3722.mp3; sourceTree = "<group>"; };
+		076EA1A222D8D98F008A61CC /* AudioTrackReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioTrackReader.swift; sourceTree = "<group>"; };
 		0B60CC7736E8DD31F4C6BB44 /* Pods-VoiceActivityDetector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceActivityDetector_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VoiceActivityDetector_Tests/Pods-VoiceActivityDetector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		183EA7A9F709717463CEED3A /* Pods-VoiceActivityDetector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceActivityDetector_Example.release.xcconfig"; path = "Target Support Files/Pods-VoiceActivityDetector_Example/Pods-VoiceActivityDetector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2A749F9FE9174D69022AAA82 /* Pods-VoiceActivityDetector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceActivityDetector_Tests.release.xcconfig"; path = "Target Support Files/Pods-VoiceActivityDetector_Tests/Pods-VoiceActivityDetector_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,11 +48,11 @@
 		607FACE51AFB9204008FA782 /* VoiceActivityDetector_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceActivityDetector_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		61A00C48A1420232188F85A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		662735B9FB48CFC51F9D8815 /* VoiceActivityDetector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VoiceActivityDetector.podspec; path = ../VoiceActivityDetector.podspec; sourceTree = "<group>"; };
+		61A00C48A1420232188F85A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		662735B9FB48CFC51F9D8815 /* VoiceActivityDetector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VoiceActivityDetector.podspec; path = ../VoiceActivityDetector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6E978FD693FFD07CE45D2EB4 /* Pods_VoiceActivityDetector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceActivityDetector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED6D9A209516773DEEEA66B /* Pods-VoiceActivityDetector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceActivityDetector_Example.debug.xcconfig"; path = "Target Support Files/Pods-VoiceActivityDetector_Example/Pods-VoiceActivityDetector_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F1C409239B14EF740FFE580F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F1C409239B14EF740FFE580F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +83,6 @@
 				0B60CC7736E8DD31F4C6BB44 /* Pods-VoiceActivityDetector_Tests.debug.xcconfig */,
 				2A749F9FE9174D69022AAA82 /* Pods-VoiceActivityDetector_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,6 +141,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				076EA1A222D8D98F008A61CC /* AudioTrackReader.swift */,
+				076EA19F22D8D4BB008A61CC /* 3722.mp3 */,
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -171,7 +178,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				BE515C09E635E28E02C25676 /* [CP] Embed Pods Frameworks */,
+				7E95780EB2534BC7C026EC15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,10 +221,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = R6HMM3C9D7;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = R6HMM3C9D7;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +237,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -249,6 +259,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				076EA1A022D8D4BB008A61CC /* 3722.mp3 in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076EA1A122D8D4BB008A61CC /* 3722.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +317,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7E95780EB2534BC7C026EC15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceActivityDetector_Example/Pods-VoiceActivityDetector_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/VoiceActivityDetector/VoiceActivityDetector.framework",
+				"${BUILT_PRODUCTS_DIR}/libfvad/libfvad.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoiceActivityDetector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libfvad.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoiceActivityDetector_Example/Pods-VoiceActivityDetector_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A74D88808E6285A75142149C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,24 +359,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE515C09E635E28E02C25676 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VoiceActivityDetector_Example/Pods-VoiceActivityDetector_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/VoiceActivityDetector/VoiceActivityDetector.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VoiceActivityDetector.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoiceActivityDetector_Example/Pods-VoiceActivityDetector_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -354,6 +368,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				076EA1A322D8D98F008A61CC /* AudioTrackReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076EA1A422D8D98F008A61CC /* AudioTrackReader.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,13 +515,14 @@
 			baseConfigurationReference = 6ED6D9A209516773DEEEA66B /* Pods-VoiceActivityDetector_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6HMM3C9D7;
 				INFOPLIST_FILE = VoiceActivityDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -514,13 +531,14 @@
 			baseConfigurationReference = 183EA7A9F709717463CEED3A /* Pods-VoiceActivityDetector_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6HMM3C9D7;
 				INFOPLIST_FILE = VoiceActivityDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -528,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B60CC7736E8DD31F4C6BB44 /* Pods-VoiceActivityDetector_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = R6HMM3C9D7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -550,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A749F9FE9174D69022AAA82 /* Pods-VoiceActivityDetector_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = R6HMM3C9D7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
