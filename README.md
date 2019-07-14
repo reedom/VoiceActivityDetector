@@ -105,6 +105,8 @@ so for example at 8 kHz, `count` must be either 80, 160 or 240.
 
 Returns a VAD decision.
 
+Under the hood, the VAD engine calculates energy powers in six frequency bands between 80-4KHz from signal data flow and guesses chance of voice activity state in a input duration. So, its decision should be more accurate by sequencial detection than one-shot or periodic ones.
+
 ```swift
 func detect(frames: UnsafePointer<Int16>, lengthInMilliSec ms: Int) -> VoiceActivity
 ```
