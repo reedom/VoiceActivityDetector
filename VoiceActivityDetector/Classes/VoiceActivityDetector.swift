@@ -19,7 +19,7 @@ public class VoiceActivityDetector {
   /// Put in other words the probability of being speech when the VAD returns
   /// `VoiceActivity.activeVoice` is increased with increasing mode.
   /// As a consequence also the missed detection rate goes up.
-  public enum DetectionAgressiveness: Int32 {
+  public enum DetectionAggressiveness: Int32 {
     case quality = 0
     case lowBitRate = 1
     case aggressive = 2
@@ -40,7 +40,7 @@ public class VoiceActivityDetector {
   }
 
   let inst: OpaquePointer
-  var _detectionAgressiveness = DetectionAgressiveness.quality
+  var _detectionAggressiveness = DetectionAggressiveness.quality
   var _sampleRate: Int = 8000
 
   /// Creates and initializes a VAD instance.
@@ -56,7 +56,7 @@ public class VoiceActivityDetector {
   /// - Parameter sampleRate: Sample rate in Hz for VAD operations. Supports only 8000|16000|32000|48000.
   /// - Parameter agressiveness: VAD operating "aggressiveness" mode.
   /// - Returns: `nil` in case of a memory allocation error.
-  public convenience init?(sampleRate: Int = 8000, agressiveness: DetectionAgressiveness = .quality) {
+  public convenience init?(sampleRate: Int = 8000, agressiveness: DetectionAggressiveness = .quality) {
     self.init()
     self.sampleRate = sampleRate
     self.agressiveness = agressiveness
@@ -66,7 +66,7 @@ public class VoiceActivityDetector {
   ///
   /// - Parameter agressiveness: VAD operating "aggressiveness" mode.
   /// - Returns: `nil` in case of a memory allocation error.
-  public convenience init?(agressiveness: DetectionAgressiveness = .quality) {
+  public convenience init?(agressiveness: DetectionAggressiveness = .quality) {
     self.init()
     self.agressiveness = agressiveness
   }
@@ -83,13 +83,13 @@ public class VoiceActivityDetector {
   }
 
   /// VAD operating "aggressiveness" mode.
-  public var agressiveness: DetectionAgressiveness {
-    get { return _detectionAgressiveness }
+  public var agressiveness: DetectionAggressiveness {
+    get { return _detectionAggressiveness }
     set {
       guard fvad_set_mode(inst, newValue.rawValue) == 0 else {
         fatalError("Invalid value: \(newValue.rawValue)")
       }
-      _detectionAgressiveness = newValue
+      _detectionAggressiveness = newValue
     }
   }
 

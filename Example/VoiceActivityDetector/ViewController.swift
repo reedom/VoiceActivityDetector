@@ -82,7 +82,7 @@ class ViewController: UIViewController {
     let i = Int32(round(sender.value))
     sender.value = Float(i)
 
-    let agressiveness = VoiceActivityDetector.DetectionAgressiveness.init(rawValue: i)!
+    let agressiveness = VoiceActivityDetector.DetectionAggressiveness.init(rawValue: i)!
     voiceActivityDetector.agressiveness = agressiveness
     agressivenessLabel.text = agressiveness.description
   }
@@ -207,7 +207,7 @@ extension ViewController {
   }
 }
 
-extension VoiceActivityDetector.DetectionAgressiveness {
+extension VoiceActivityDetector.DetectionAggressiveness {
   var description: String {
     switch self {
     case .quality:

@@ -10,7 +10,7 @@ import AVFoundation
 
 public protocol AudioDataReader: class {
   var isActive: Bool { get }
-  func next(readDataHandler: @escaping (CMSampleBuffer?) -> Void)
+  func next() -> CMSampleBuffer?
 }
 
 public class AudioTrackReader: AudioDataReader {
@@ -48,17 +48,16 @@ public class AudioTrackReader: AudioDataReader {
     isActive = true
   }
 
-  public func next(readDataHandler handler: @escaping (CMSampleBuffer?) -> Void) {
+  public func next() -> CMSampleBuffer? {
     guard
       isActive,
       let sample = readerOutput.copyNextSampleBuffer(),
       CMSampleBufferIsValid(sample)
       else {
         isActive = false
-        handler(nil)
-        return
+        return nil
     }
 
-    handler(sample)
+    return sample
   }
 }

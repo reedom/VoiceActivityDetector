@@ -75,14 +75,13 @@ class VoiceActivityDetectorSpec: QuickSpec {
         let path = Bundle.main.path(forResource: "3722", ofType: "mp3")!
         let reader = try! AudioTrackReader(audioPath: path, timeRange: nil, settings: settings)
 
-        var sampleBuffer: CMSampleBuffer!
-        reader.next() { CMSampleBufferInvalidate($0!) } // skip the first iteration
-        reader.next() { sampleBuffer = $0 }
+        CMSampleBufferInvalidate(reader.next()!) // skip the first iteration
+        let sampleBuffer = reader.next()!
 
         expect(sampleBuffer).notTo(beNil())
 
         let detector = VoiceActivityDetector()!
-        guard let activities = detector.detect(sampleBuffer: sampleBuffer!, byEachMilliSec: 10, duration: 30) else {
+        guard let activities = detector.detect(sampleBuffer: sampleBuffer, byEachMilliSec: 10, duration: 30) else {
           fail()
           return
         }
