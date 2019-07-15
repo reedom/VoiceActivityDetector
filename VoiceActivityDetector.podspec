@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VoiceActivityDetector'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'WebRTC based voice activity detection.'
   s.homepage         = 'https://github.com/reedom/VoiceActivityDetector'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
